@@ -58,8 +58,8 @@ def compile_extensions(macros, compat=False):
 
     # common vars
     libraries = ['rrd']
-    include_dirs = [package_dir, '/usr/local/include']
-    library_dirs = ['/usr/local/lib']
+    include_dirs = [package_dir, '/usr/local/include', '/opt/local/include']
+    library_dirs = ['/usr/local/lib', '/opt/local/lib']
     compiler_args = dict(
         libraries=libraries,
         include_dirs=include_dirs,
